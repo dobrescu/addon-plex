@@ -49,11 +49,13 @@
   "host_network": false,
   "options": {
     "claim_code": "",
+    "mount": "/Movies",
     "webtools": false
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
     "claim_code": "str",
-    "webtools": "bool"
+    "webtools": "bool",
+    "mount": "str"
   }
 }
