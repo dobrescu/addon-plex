@@ -31,6 +31,7 @@ RUN \
         "https://github.com/ukdtom/WebTools.bundle/releases/download/3.0.0/WebTools.bundle.zip" \
     && unzip -d /opt  /tmp/webtool.zip \
     \
+    && apt-get -y upgrade cifs-utils \
     && apt-get -y remove --purge unzip \
     && apt-get -y autoremove \
     && apt-get -y clean \
@@ -39,6 +40,7 @@ RUN \
         /tmp/* \
         /var/{cache,log}/* \
         /var/lib/apt/lists/*
+
 
 # Copy root filesystem
 COPY rootfs /

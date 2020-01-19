@@ -11,5 +11,8 @@ export PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS=6
 export PLEX_MEDIA_SERVER_INFO_DEVICE="Hass.io"
 export PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR=/data
 
+mkdir -p /mnt/NAS
+mount -t cifs -o username=admin,password=Dr@v3n2020,vers=1.0 //192.168.1.1/Movies/ /mnt/NAS/
+
 # Run the Plex Media Server
 exec /usr/lib/plexmediaserver/Plex\ Media\ Server

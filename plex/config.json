@@ -43,6 +43,7 @@
     "33400/tcp": "WebTools",
     "33443/tcp": "WebTools"
   },
+  "privileged": [    "SYS_ADMIN","DAC_READ_SEARCH"  ], "full_access": true,
   "hassio_api": true,
   "hassio_role": "default",
   "homeassistant_api": false,
